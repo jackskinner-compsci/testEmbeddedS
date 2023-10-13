@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    </head>
+    <body>
+        Test
+        <script type='text/javascript'>
+            function initEmbeddedMessaging() {
+                try {
+                    embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+        
+                    embeddedservice_bootstrap.init(
+                        '00D2z00000065MB',
+                        'careHubLiveChatDeployment',
+                        'https://vitality--optimise.sandbox.my.site.com/ESWcareHubLiveChatDeploym1690276570819',
+                        {
+                            scrt2URL: 'https://vitality--optimise.sandbox.my.salesforce-scrt.com'
+                        }
+                    );
+                } catch (err) {
+                    console.error('Error loading Embedded Messaging: ', err);
+                }
+            };
+        </script>
+        <script type='text/javascript' src='https://vitality--optimise.sandbox.my.site.com/ESWcareHubLiveChatDeploym1690276570819/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+        
+    </body>
+</html>
